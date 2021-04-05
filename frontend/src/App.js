@@ -21,7 +21,6 @@ class App extends React.Component {
       <div className="App">
         {/* <Signup/> */}
         <RegisterSVG/>
-        {/* <LoginScreen/> */}
       </div>
     );
   }

@@ -32,7 +32,7 @@ class RegisterScreen extends React.Component {
             }
         }
         axios
-            .post('http://localhost:3001/login', reqRegister)
+            .post('http://localhost:3001/register', reqRegister)
             .then(response => {
                 this.props.callback(response)
             })
