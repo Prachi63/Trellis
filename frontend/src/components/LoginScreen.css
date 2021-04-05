@@ -1,0 +1,40 @@
+.leftcolumn {
+    position: absolute;
+    background-color: #486cff;
+    width: 30%;
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.rightcolumn {
+    position: relative;
+    margin-left: auto; 
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 70%;
+    height: 100%;
+}
+
+.loginbox {
+    background-color: #486cff;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 10px;
+}
