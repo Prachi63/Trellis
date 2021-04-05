@@ -19,8 +19,8 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {/* <Signup/> */}
-        <RegisterSVG/>
+        <Signup callback={this.handleLogin}/>
+        {/* <RegisterSVG/> */}
       </div>
     );
   }

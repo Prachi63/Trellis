@@ -4,7 +4,7 @@ function RegisterSVG(props) {
     return (
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 768" preserveAspectRatio="xMidYMin slice" 
-                style={{width: '100%', paddingBottom: '47%', height: '1px', overflow:'visible'}}>
+                style={{width: '100%', paddingBottom: '60%', height: '1px', overflow:'visible'}}>
                 <defs>
                     <filter id="Ellipse_10" x="1169.764" y="252.71" width="75.184" height="75.184" filterUnits="userSpaceOnUse">
                     <feOffset dy="3" input="SourceAlpha"/>

@@ -51,8 +51,8 @@ class RegisterScreen extends React.Component {
                                     'aria-label': 'Type of account' 
                                 }}
                             >
-                                <option value="mentor">Mentor</option>
                                 <option value="mentee">Mentee</option>
+                                <option value="mentor">Mentor</option>
                             </Select>
                             <TextField 
                                 id="outlined-basic" 

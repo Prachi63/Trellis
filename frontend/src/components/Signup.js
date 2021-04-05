@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Typography, Button} from '@material-ui/core';
+import { Typography, Button, Link } from '@material-ui/core';
 import LoginScreen from './LoginScreen'
 import RegisterScreen from './RegisterScreen'
 import './LoginScreen.css'
@@ -39,16 +39,24 @@ class Signup extends React.Component {
                     {this.state.showLogin &&
                         <div className="loginbox">
                             <LoginScreen callback={this.userLoggedIn}/>
-                            <Typography>Don't have an account? Register here</Typography>
-                            <Button onClick={this.switchPage}> Button </Button>
+                            <Typography>Don't have an account? Register 
+                                <Link 
+                                    href="#" 
+                                    onClick={this.switchPage}
+                                    style={{ textDecoration: 'none' }}> here </Link>
+                            </Typography>
                         </div>
                     }
                     
                     {!this.state.showLogin &&
                         <div className="loginbox">
                             <RegisterScreen callback={this.switchPage}/>
-                            <Typography> Already have an account? Login here</Typography>
-                            <Button onClick={this.switchPage}> Button </Button>
+                            <Typography> Already have an account? Login  
+                                <Link 
+                                    href="#" 
+                                    onClick={this.switchPage} 
+                                    style={{ textDecoration: 'none' }}> here </Link>
+                            </Typography>
                         </div>
                     }
                 </div>
