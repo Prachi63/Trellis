@@ -13,7 +13,7 @@ const User = require("../../models/User");
 // @route POST api/users/register
 // @desc Register user
 // @access Public
-router.post("/register", (req, res) => {
+router.post("/register", (req, res) => { 
     // Form validation
   const { errors, isValid } = validateRegisterInput(req.body);
   // Check validation
