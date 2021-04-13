@@ -8,6 +8,7 @@ const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/User");
+const UserInfo = require("../../models/UserInfo");
 
 
 // @route POST api/users/register
@@ -56,7 +57,7 @@ router.post("/login", (req, res) => {
       return res.status(400).json(errors);
     }
   const email = req.body.email;
-    const password = req.body.password;
+  const password = req.body.password;
   // Find user by email
     User.findOne({ email }).then(user => {
       // Check if user exists
@@ -93,6 +94,22 @@ router.post("/login", (req, res) => {
         }
       });
     });
+  });
+
+
+  router.post( "/UpdateInfo", (req, res) => {
+    const newUserInfo = new UserInfo({
+      userId: req.body.userId, 
+      major: req.body.major, 
+      gradYear: req.body.gradYear,
+      school: req.body.school,
+      bio: req.body.bio
+    });
+
+    newUserInfo
+    .save()
+    .then(UserInfo => res.json(UserInfo))
+    .catch(err => console.log(err));
   });
 
   module.exports = router;
